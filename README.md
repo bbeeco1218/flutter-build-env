@@ -1,6 +1,6 @@
 # env_build
 
-A new Flutter project.
+환경별 빌드를 구현
 
 ## Getting Started
 
