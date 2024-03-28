@@ -40,6 +40,20 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
+     flavorDimensions "api" 
+
+     productFlavors {  
+        dev {  
+            dimension "api"  
+            applicationIdSuffix ".dev"  
+            resValue "string", "app_name", "DEV falvor example"  
+        }  
+        prod {  
+            dimension "api"  
+            resValue "string", "app_name", "falvor example"  
+        }
+    }  
+
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.example.env_build"
